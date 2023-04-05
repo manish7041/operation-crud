@@ -1,0 +1,48 @@
+.wrapper{
+    box-sizing: border-box;
+    padding: 40px;
+    gap: 20px;
+    background-color: khaki;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.example-form{
+    position: relative;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.example-full-width{
+    /* background-color: ghostwhite; */
+    display: flex;
+    flex-direction: column;
+}
+.id{
+    margin-bottom: 8px;
+}
+input{
+    padding: 5px;
+    border-radius: 1px;
+    border: 1px solid white;
+}
+
+.btns{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.update,.leave{
+    background-color: rgb(21, 189, 239);
+    border: 1px solid white;
+    padding:8px ;
+    border-radius: 5px;
+}

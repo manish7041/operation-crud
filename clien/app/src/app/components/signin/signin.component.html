@@ -1,0 +1,27 @@
+<div class="main-wrapper">
+
+    <div class="box">
+      <div>
+        <p>Sign In</p>
+      </div>
+  
+      <form class="example-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+        
+          <div class="example-full-width">
+            <input matInput placeholder="Email-Id" type="email" formControlName="email">
+          </div> <br>
+       
+
+          <div class="example-full-width">
+            <input matInput placeholder="Password" type="password" formControlName="password">
+            <p *ngIf="err">{{err}}</p>
+          </div>
+       
+
+        <button class="btn" type="submit">Sign-In</button>
+        
+        <a routerLink="/register" routerLinkActive="active"  style="margin-left: 8px;">I Have no Account.</a>
+      </form>
+    </div>
+  
+  </div>

@@ -1,0 +1,43 @@
+<div class="main-wrapper">
+  <div class="box">
+    <div>
+      <p>Register</p>
+    </div>
+
+    <form class="example-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+      <div>
+        <div class="example-full-width">
+          <label>Name</label>
+          <input matInput placeholder="Name" type="text" formControlName="name">
+        </div> <br>
+
+        <div class="example-full-width">
+          <label>Email</label>
+          <input matInput placeholder="Email" type="email" formControlName="email">
+        </div> <br>
+
+        <div class="example-full-width">
+          <label>Password</label>
+          <input matInput placeholder="Password" type="password" formControlName="password">
+        </div> <br>
+
+        <div class="example-full-width">
+          <label>Mobile</label>
+          <input matInput placeholder="Mobile No." type="tel" formControlName="mobile">
+
+        </div>
+
+      </div>
+
+      <button color="primary"  type="submit">Register
+
+      </button>
+
+      <a routerLink="/signin" routerLinkActive="active" style="margin-left: 8px;">I Already Have an Account.</a>
+
+    </form>
+  </div>
+</div>
+
+

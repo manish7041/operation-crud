@@ -1,0 +1,49 @@
+<div class="wrapper">
+  
+    <h1 >Edit User Info.</h1>
+  
+ 
+
+<form class="example-form" [method]="dataSource" [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <div class="example-full-width id">
+      <label>Id</label>
+      <input matInput [(ngModel)]="_id" type="text" formControlName="_id">
+    </div>
+
+    <div class="example-full-width">
+      <label>Name</label>
+      <input matInput [(ngModel)]="name" type="text" formControlName="name">
+    </div> <br>
+
+    <div class="example-full-width">
+      <label>Email</label>
+      <input matInput [(ngModel)]="email" type="email" formControlName="email">
+    </div> <br>
+
+    <div class="example-full-width">
+      <label>Password</label>
+      <input matInput [(ngModel)]="password" type="password" formControlName="password">
+    </div> <br>
+
+    <div class="example-full-width">
+      <label>Mobile</label>
+      <input matInput [(ngModel)]="mobile" type="tel" formControlName="mobile">
+
+    </div>
+
+  </div>
+
+  <div class="btns" mat-dialog-actions>
+    <button mat-stroked-button color="primary" class="btn-block update" mat-button [mat-dialog-close]="data.animal"
+      cdkFocusInitial type="submit">Update</button>
+
+    <button mat-stroked-button color="primary" class="btn-block leave" mat-button (click)="onNoClick()" type="button">No
+      Thanks</button>
+  </div>
+</form>
+
+
+
+</div>

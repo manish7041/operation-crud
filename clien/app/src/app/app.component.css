@@ -1,0 +1,44 @@
+.app-header{
+    background-color:lightgrey;
+    display: flex;
+    width: auto;
+   height:100px;
+}
+.demo{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 5px;
+}
+.positronx{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color:slategray
+}
+.nav-tool-items{
+    position: relative;
+    top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: max-content;
+    gap: 50px;
+
+
+}
+a.three{
+    padding: 10px;
+    text-decoration: none;
+    max-width: max-content;
+    background-color: rosybrown;
+    color:black;
+    border-radius: 5px;
+}
+
+.three:hover{
+    background-color:black;
+    color: cadetblue;
+}
+

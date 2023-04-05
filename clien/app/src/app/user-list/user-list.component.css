@@ -1,0 +1,34 @@
+.table{
+    background: #fdfcfc;
+}
+button{position: relative;
+    left: -35px;
+    
+}
+
+button.red{
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    padding: 9px;
+}
+
+button.black{
+    background-color:black;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    padding: 9px;
+}
+
+button.red:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+button.black:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
